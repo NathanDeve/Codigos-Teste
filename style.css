@@ -1,0 +1,154 @@
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: shine 2s linear infinite;
+    font-size: 16px;
+    background-image: url("galatus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+@keyframes shine {
+    0% {
+      filter: drop-shadow(0 0 10px rgb(26, 26, 121));
+    }
+    25% {
+      filter: drop-shadow(0 0 10px rgb(206, 50, 50));
+    }
+    50% {
+      filter: drop-shadow(0 0 10px rgb(243, 161, 9));
+    }
+    75% {
+      filter: drop-shadow(0 0 10px yellow);
+    }
+    100% {
+      filter: drop-shadow(0 0 10px rgb(26, 26, 121));
+    }
+  }
+  
+  .glowing-text {
+    animation: color-transition 5s infinite;
+  }
+  @keyframes color-transition {
+    0% { color: rgb(0, 255, 221); }
+    25% { color: rgb(0, 183, 255); }
+    50% { color: rgb(69, 72, 236); }
+    75% { color: rgb(119, 0, 255); }
+    100% { color: rgb(0, 255, 221); }
+  }
+  
+  
+.lll{
+    width: 33%;
+    height: 50%;
+}
+  
+.kkj{
+    width: 100%;
+    height: 100%;
+}
+
+  .container {
+    text-align: center;
+  }
+  
+  .input__container {
+    margin-left:20%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.664);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 22px;
+    max-width: 300px;
+    transition: transform 400ms;
+    transform-style: preserve-3d;
+    transform: rotateX(15deg) rotateY(-20deg);
+    perspective: 500px;
+  }
+  
+  .shadow__input {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(30px);
+    border-radius: 20px;
+    background-color: #999cff;
+    background-image: radial-gradient(at 85% 51%, hsla(60,60%,61%,1) 0px, transparent 50%),
+      radial-gradient(at 74% 68%, hsla(235,69%,77%,1) 0px, transparent 50%),
+      radial-gradient(at 64% 79%, hsla(284,72%,73%,1) 0px, transparent 50%),
+      radial-gradient(at 75% 16%, hsla(283,60%,72%,1) 0px, transparent 50%),
+      radial-gradient(at 90% 65%, hsla(153,70%,64%,1) 0px, transparent 50%),
+      radial-gradient(at 91% 83%, hsla(283,74%,69%,1) 0px, transparent 50%),
+      radial-gradient(at 72% 91%, hsla(213,75%,75%,1) 0px, transparent 50%);
+  }
+  
+  .input__button__shadow {
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: transform 400ms, background 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 5px;
+  }
+  
+  .input__button__shadow:hover {
+    background: rgba(255, 255, 255, 0.411);
+  }
+  
+  .input__search {
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    position: relative;
+  }
+
+  button {
+    
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+
+  
